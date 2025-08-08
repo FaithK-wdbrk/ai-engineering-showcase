@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Modern personal landing page" />
+  <title>Your Name — Personal Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfL9z8c1x3Ry2nq+5m1aL1QCOGJ0CqvVqY6a8GN28M5w2zYx4GdB+Ykg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Home">Your Name</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle menu">
+        <span class="menu-icon"></span>
+      </button>
+      <nav id="primary-navigation" class="nav-menu" role="navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero" role="main">
+    <div class="container hero-inner">
+      <p class="eyebrow">Welcome</p>
+      <h1>Building delightful digital experiences</h1>
+      <p class="subtitle">I’m a professional with a passion for creating modern, performant, and accessible products.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="#about">Learn more</a>
+      </div>
+    </div>
+    <div class="hero-accent" aria-hidden="true"></div>
+  </main>
+
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        This is placeholder text for the About section. Share a concise professional bio, your values, and what you’re currently
+        focused on. Emphasize outcomes, collaboration, and how you approach solving problems.
+      </p>
+      <p>
+        You can add highlights like notable projects, industries you’ve worked in, or technologies you enjoy. Keep it short and
+        scannable.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-header">
+            <span>HTML & CSS</span>
+            <span class="skill-value">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" data-level="90"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span>JavaScript</span>
+            <span class="skill-value">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" data-level="85"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span>React</span>
+            <span class="skill-value">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" data-level="80"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span>Node.js</span>
+            <span class="skill-value">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" data-level="75"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span>Python</span>
+            <span class="skill-value">70%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" data-level="70"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span>UI/UX</span>
+            <span class="skill-value">60%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-progress" data-level="60"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Want to collaborate or say hello? Reach out anytime.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:you@example.com"><i class="fa-solid fa-envelope"></i><span>Email me</span></a>
+        <div class="socials" aria-label="Social links">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Your Name. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
