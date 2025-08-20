@@ -62,14 +62,14 @@ function initNavigation() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         // Add/remove scrolled class for styling
-        if (scrollTop > 100) {
+        if (scrollTop > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
 
         // Hide/show header on scroll
-        if (scrollTop > lastScrollTop && scrollTop > 500) {
+        if (scrollTop > lastScrollTop && scrollTop > 300) {
             header.style.transform = 'translateY(-100%)';
         } else {
             header.style.transform = 'translateY(0)';
