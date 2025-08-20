@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="John Doe - Full Stack Developer Portfolio. Showcasing modern web development projects, skills, and experience in JavaScript, React, Node.js, and more.">
+    <meta name="keywords" content="web developer, full stack developer, JavaScript, React, Node.js, portfolio, software engineer">
+    <meta name="author" content="John Doe">
+    <meta property="og:title" content="John Doe - Full Stack Developer">
+    <meta property="og:description" content="Professional developer portfolio showcasing modern web development projects and skills">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://johndoe.dev">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>John Doe - Full Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#home" class="logo" aria-label="John Doe - Home">
+                    <span class="logo-text">JD</span>
+                </a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                    <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 id="hero-heading" class="hero-name">
+                        Hi, I'm <span class="highlight">John Doe</span>
+                    </h1>
+                    <p class="hero-title">Full Stack Developer</p>
+                    <p class="hero-description">
+                        I create modern, responsive web applications with clean code and exceptional user experiences. 
+                        Passionate about turning ideas into digital solutions that make a difference.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" role="button">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary" role="button">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-avatar" role="img" aria-label="John Doe profile illustration"></div>
+                </div>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/400x400/4f46e5/ffffff?text=Your+Photo" 
+                             alt="John Doe - Professional headshot" 
+                             class="about-photo">
+                    </div>
+                    <div class="about-text">
+                        <h3 class="about-subtitle">Crafting Digital Experiences</h3>
+                        <p>
+                            With over 5 years of experience in web development, I specialize in creating 
+                            scalable, user-friendly applications that solve real-world problems. My journey 
+                            began with a curiosity for how websites work, and it has evolved into a passion 
+                            for building exceptional digital experiences.
+                        </p>
+                        <p>
+                            I believe in writing clean, maintainable code and staying up-to-date with the 
+                            latest technologies. When I'm not coding, you can find me contributing to 
+                            open-source projects, mentoring junior developers, or exploring new frameworks 
+                            and tools.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-code" aria-hidden="true"></i>
+                                <span>Clean Code Advocate</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users" aria-hidden="true"></i>
+                                <span>Team Collaborator</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                                <span>Problem Solver</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-rocket" aria-hidden="true"></i>
+                                <span>Innovation Driven</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript skill level: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="React skill level: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript skill level: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS/SCSS</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="CSS/SCSS skill level: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js skill level: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Python skill level: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="MongoDB skill level: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="PostgreSQL skill level: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Tools & Others</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git</span>
+                                    <span class="skill-percentage">93%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 93%" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" aria-label="Git skill level: 93%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-percentage">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 78%" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Docker skill level: 78%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">AWS</span>
+                                    <span class="skill-percentage">72%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 72%" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="AWS skill level: 72%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Figma skill level: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/4f46e5/ffffff?text=E-Commerce+Platform" 
+                                 alt="E-Commerce Platform - Modern online shopping interface" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View E-Commerce Platform live demo">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View E-Commerce Platform source code">
+                                        <i class="fab fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">
+                                A full-featured e-commerce platform with user authentication, product catalog, 
+                                shopping cart, payment integration, and admin dashboard. Built with modern 
+                                technologies for optimal performance and user experience.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/059669/ffffff?text=Task+Management+App" 
+                                 alt="Task Management App - Productivity dashboard interface" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Task Management App live demo">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Task Management App source code">
+                                        <i class="fab fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                A collaborative task management application with real-time updates, team 
+                                collaboration features, project timelines, and analytics. Designed to 
+                                boost productivity and streamline workflow management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/dc2626/ffffff?text=Weather+Dashboard" 
+                                 alt="Weather Dashboard - Real-time weather application interface" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Weather Dashboard live demo">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Weather Dashboard source code">
+                                        <i class="fab fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-description">
+                                A responsive weather dashboard with location-based forecasts, interactive 
+                                maps, weather alerts, and historical data visualization. Features beautiful 
+                                animations and intuitive user interface design.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Weather API</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/7c3aed/ffffff?text=Social+Media+Dashboard" 
+                                 alt="Social Media Dashboard - Analytics and management interface" 
+                                 class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Social Media Dashboard live demo">
+                                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="View Social Media Dashboard source code">
+                                        <i class="fab fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Social Media Dashboard</h3>
+                            <p class="project-description">
+                                A comprehensive social media management dashboard with analytics, post 
+                                scheduling, engagement tracking, and multi-platform integration. Built 
+                                for social media managers and content creators.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Prisma</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience" aria-labelledby="experience-heading">
+            <div class="container">
+                <h2 id="experience-heading" class="section-title">Experience & Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Senior Full Stack Developer</h3>
+                                <span class="timeline-company">TechCorp Solutions</span>
+                                <span class="timeline-date">2022 - Present</span>
+                            </div>
+                            <p class="timeline-description">
+                                Lead development of scalable web applications serving 100K+ users. Mentor junior 
+                                developers and architect solutions using modern JavaScript frameworks. Improved 
+                                application performance by 40% through code optimization and best practices.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-pill">React</span>
+                                <span class="skill-pill">Node.js</span>
+                                <span class="skill-pill">AWS</span>
+                                <span class="skill-pill">Team Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Full Stack Developer</h3>
+                                <span class="timeline-company">StartupXYZ</span>
+                                <span class="timeline-date">2020 - 2022</span>
+                            </div>
+                            <p class="timeline-description">
+                                Developed and maintained multiple client projects from concept to deployment. 
+                                Collaborated with designers and product managers to deliver pixel-perfect, 
+                                responsive web applications. Reduced loading times by 60% through optimization.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-pill">Vue.js</span>
+                                <span class="skill-pill">Python</span>
+                                <span class="skill-pill">PostgreSQL</span>
+                                <span class="skill-pill">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Frontend Developer</h3>
+                                <span class="timeline-company">WebAgency Pro</span>
+                                <span class="timeline-date">2019 - 2020</span>
+                            </div>
+                            <p class="timeline-description">
+                                Specialized in creating responsive, accessible web interfaces for diverse clients. 
+                                Worked closely with UX/UI designers to implement modern design systems and 
+                                ensure cross-browser compatibility across all major platforms.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-pill">JavaScript</span>
+                                <span class="skill-pill">CSS/SCSS</span>
+                                <span class="skill-pill">Webpack</span>
+                                <span class="skill-pill">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker education"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Bachelor of Computer Science</h3>
+                                <span class="timeline-company">University of Technology</span>
+                                <span class="timeline-date">2015 - 2019</span>
+                            </div>
+                            <p class="timeline-description">
+                                Graduated Magna Cum Laude with a focus on software engineering and web technologies. 
+                                Active in coding competitions and open-source contributions. Completed senior project 
+                                on machine learning applications in web development.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-pill">Data Structures</span>
+                                <span class="skill-pill">Algorithms</span>
+                                <span class="skill-pill">Software Engineering</span>
+                                <span class="skill-pill">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Let's Work Together</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Get In Touch</h3>
+                        <p class="contact-description">
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:john.doe@email.com">john.doe@email.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>San Francisco, CA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="LinkedIn profile">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="GitHub profile">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter profile">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram profile">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" role="form" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required 
+                                   aria-describedby="name-error">
+                            <span id="name-error" class="form-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required 
+                                   aria-describedby="email-error">
+                            <span id="email-error" class="form-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required 
+                                   aria-describedby="subject-error">
+                            <span id="subject-error" class="form-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required 
+                                      aria-describedby="message-error"></textarea>
+                            <span id="message-error" class="form-error" role="alert"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <span class="submit-text">Send Message</span>
+                            <span class="submit-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">John Doe</h3>
+                    <p class="footer-description">
+                        Building the future, one line of code at a time.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li><a href="#home" class="footer-link">Home</a></li>
+                            <li><a href="#about" class="footer-link">About</a></li>
+                            <li><a href="#projects" class="footer-link">Projects</a></li>
+                            <li><a href="#contact" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Web Development</a></li>
+                            <li><a href="#" class="footer-link">Mobile Apps</a></li>
+                            <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                            <li><a href="#" class="footer-link">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                            <li><a href="#" class="footer-link">Portfolio</a></li>
+                            <li><a href="#" class="footer-link">Resume</a></li>
+                            <li><a href="#" class="footer-link">References</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2024 John Doe. All rights reserved. Built with ❤️ and modern web technologies.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
