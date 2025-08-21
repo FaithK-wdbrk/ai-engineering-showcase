@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AI Engineering Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typing-text" id="typing-text"></span>
+                <span class="cursor" id="cursor">|</span>
+            </h1>
+            <p class="hero-subtitle fade-in">AI Engineering Showcase</p>
+            <div class="hero-buttons fade-in">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Me</h2>
+            <div class="about-content animate-on-scroll">
+                <p>Passionate AI engineer with expertise in machine learning, deep learning, and modern web technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Skills</h2>
+            <div class="skills-grid animate-on-scroll">
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                    <span class="percentage">90%</span>
+                </div>
+                <div class="skill-item">
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="95"></div>
+                    </div>
+                    <span class="percentage">95%</span>
+                </div>
+                <div class="skill-item">
+                    <h3>Machine Learning</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                    <span class="percentage">85%</span>
+                </div>
+                <div class="skill-item">
+                    <h3>React</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="88"></div>
+                    </div>
+                    <span class="percentage">88%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Projects</h2>
+            <div class="project-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Web Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack web application with React and Node.js</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250" alt="AI Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chatbot</h3>
+                        <p>Intelligent chatbot using natural language processing</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Mobile Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile App</h3>
+                        <p>Cross-platform mobile application with React Native</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Web Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive portfolio with modern animations</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Contact Me</h2>
+            <div class="contact-content animate-on-scroll">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                </form>
+                <div class="form-message" id="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
